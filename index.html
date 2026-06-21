@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillWords</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo-container">
+
+            <img
+                src="../static/img/logo.png"
+                alt="Logo"
+                class="logo-img"
+            >
+
+            <div class="logo">
+                Skill<span>Words</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search word..."
+                autocomplete="off"
+            >
+
+            <div id="suggestions"></div>
+
+        </div>
+
+    </section>
+
+    <!-- MAIN -->
+
+    <section class="main-content">
+
+        <!-- DICTIONARY -->
+
+        <a href="dictionary.html" class="dictionary-card">
+
+            <img
+                src="../static/img/download.png"
+                alt="Dictionary"
+            >
+
+            <h2>
+                Dictionary
+            </h2>
+
+            <p>
+                See all words and categories
+            </p>
+
+        </a>
+
+        <!-- WORD OF THE DAY -->
+
+        <div
+            class="word-day-card"
+            id="word-day-card"
+        >
+
+            <span class="word-label">
+                WORD OF THE DAY
+            </span>
+
+            <h1 id="daily-word">
+                Loading...
+            </h1>
+
+            <p id="daily-translation">
+                ...
+            </p>
+
+            <small>
+                Click to see detail
+            </small>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="word-modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close-modal"
+                id="close-modal"
+            >
+                ×
+            </span>
+
+            <div class="modal-left">
+
+                <h1 id="modal-word"></h1>
+
+                <p id="modal-translation"></p>
+
+            </div>
+
+            <div class="modal-right">
+
+                <h2>
+                    Definition
+                </h2>
+
+                <p id="modal-definition"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ARCADE -->
+
+    <section class="arcade">
+
+        <div class="arcade-title">
+          <h1>Skill Zone</h1>
+        </div>
+
+        <a href="../templates/ahorcado.html" class="game-card">
+
+            <img
+                src="../static/img/bomb.png"
+                alt="Bomb Word"
+            >
+
+            <h2>
+                Bomb Word
+            </h2>
+
+        </a>
+
+        <a href="../templates/roulette.html" class="game-card">
+
+            <img
+                src="../static/img/roulette.png"
+                alt="Roulette"
+            >
+
+            <h2>
+                Roulette
+            </h2>
+
+        </a>
+
+        <a href="../templates/match.html" class="game-card">
+
+            <img
+                src="../static/img/match.png"
+                alt="Match Words"
+            >
+
+            <h2>
+                Match Words
+            </h2>
+
+        </a>
+
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div id="footer_titulo">
+
+                <h2>
+                SkillWords
+                </h2>
+
+            </div>
+
+            
+            <div id="footer_institucion">
+
+                <p>
+                Servicio Nacional de Aprendizaje
+                </p>
+
+                <p>
+                Analisis y Desarrollo de Software
+                </p>
+
+            </div>
+
+
+            <div id="footer_creditos">
+
+                <p>
+                Authors:
+                </p>
+
+                <div class="autor">
+                <p>
+                Camilo Andres Londoño Soto 
+                </p>
+                <p>
+                camandres04@gmail.com
+                </p>
+                </div>
+
+
+                <div class="autor">
+                <p>
+                Juan Jose Padilla Niño
+                </p>
+                <p>
+                jjpadillan@gmail.com
+                </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script defer src="static/js/script.js"></script>
+
+</body>
+
+</html>
