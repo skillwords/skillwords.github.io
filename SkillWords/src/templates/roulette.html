@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ruleta de Vocabulario</title>
+
+    <link rel="stylesheet" href="../static/css/roulette.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Vocabulary Roulette</h1>
+
+    <div class="main-layout">
+
+        <div class="wheel-section">
+
+            <div class="pointer"></div>
+
+            <canvas
+                id="wheel"
+                width="500"
+                height="500">
+            </canvas>
+
+        </div>
+
+        <div class="result-panel">
+
+            <h2>Categoría:</h2>
+
+            <p id="selectedCategory">
+                -
+            </p>
+
+            <h2>Palabra:</h2>
+
+            <p id="selectedWord">
+                -
+            </p>
+
+            <button id="showInfo">
+                DETALLES
+            </button>
+
+            <button id="spinBtn">
+                GIRAR
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">
+            ×
+        </span>
+
+        <div class="popup-left">
+
+            <h1 id="popupWord"></h1>
+
+            <p id="popupTranslation"></p>
+
+        </div>
+
+        <div class="popup-right">
+
+            <h2>Definition</h2>
+
+            <p id="popupDefinition"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../static/js/roulette.js"></script>
+
+</body>
+</html>

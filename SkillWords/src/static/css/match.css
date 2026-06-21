@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Merriweather", serif;
+    
+}
+
+body{
+
+    min-height:100vh;
+
+    background:#f2f8fd;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+
+    width:95%;
+    max-width:1400px;
+
+    text-align:center;
+}
+
+h1{
+    
+
+    margin-bottom:20px;
+
+    font-size:4rem;
+
+    color:#1b425f;
+
+    text-shadow:
+        4px 4px 0 #55aadb;
+}
+
+p{
+
+    color:#475569;
+
+    margin-bottom:25px;
+}
+
+.board{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:15px;
+
+    padding: 10px;
+    border: 2px #c4e0f3 solid;
+    border-radius: 20px;
+}
+
+.card{
+
+    background:#c4e0f3;
+    
+
+    border:2px solid #88c3e7;
+
+    color:#1b425f;
+
+    min-height:120px;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size: 17px;
+
+    font-weight:bold;
+
+    user-select:none;
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+}
+
+.card.selected{
+
+    background:#88c3e7;
+
+    color:#11143b;
+
+    border-color:#55aadb;
+}
+
+.card.matched{
+
+    background:#55aadb;
+
+    border-color:#2f90c8;
+
+    color:#08324d;
+
+    cursor:default;
+}
+
+#restart-btn{
+
+    background: #122a3f;
+
+    color: rgb(253, 255, 225);
+
+    padding:
+        15px 25px;
+
+    border-radius: 999px;
+
+    border: none;
+
+    margin: 25px 0 25px 0;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+#restart-btn:hover{
+
+    background:#1b5c89;
+}
+
+.message{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    color:#1B425F;
+
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+
+    .board{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
