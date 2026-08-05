@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Tiny5", sans-serif;
+}
+
+body{
+
+    background: #0B1422;
+
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow-x:hidden;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+
+    width:90%;
+    max-width:1000px;
+
+    text-align:center;
+
+    padding:40px;
+
+    background: #101C2E;
+
+    border:2px solid #1B425F;
+
+    border-radius:25px;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+}
+
+/* TITULO */
+
+h1{
+
+    margin-bottom:30px;
+
+    font-size:4rem;
+
+    color:#F2F8FD;
+
+    text-shadow:
+        4px 4px 0 #2073A9,
+        8px 8px 0 #122A3F;
+
+    letter-spacing: 2px;
+}
+
+/* IMAGEN DE LA BOMBA */
+
+.bomba{
+
+    margin:20px auto;
+
+    width:340px;
+    height:340px;
+
+    background: #0B1422;
+
+    border: 3px solid #1B425F;
+
+    border-radius:20px;
+
+    box-shadow: inset 0 0 0 6px #101C2E, 0 10px 25px rgba(0,0,0,0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bomba img{
+
+    width:85%;
+    height:85%;
+
+    object-fit:contain;
+}
+
+/* PALABRA */
+
+.palabra{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin:35px 0;
+
+    flex-wrap:wrap;
+}
+
+.letra{
+
+    width:50px;
+    height:60px;
+
+    border-bottom:5px solid #88C3E7;
+
+    color:#F2F8FD;
+
+    font-size:2rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* TECLADO */
+
+.teclado{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:30px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #1B425F;
+}
+
+.teclado button{
+
+    width:52px;
+    height:52px;
+
+    border: 2px solid #2073A9;
+
+    border-radius:8px;
+
+    background:#16374F;
+
+    color:#F2F8FD;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:0.15s;
+
+    box-shadow:
+        0 4px 0 #0B1422;
+}
+
+.teclado button:hover{
+
+    background:#2073A9;
+
+    border-color: #55AADB;
+
+    transform:translateY(-2px);
+}
+
+.teclado button:active{
+
+    transform:translateY(2px);
+
+    box-shadow:
+        0 2px 0 #0B1422;
+}
+
+.teclado button:disabled{
+
+    background:#101C2E;
+
+    border-color: #16374F;
+
+    color:#3E5C74;
+
+    box-shadow:none;
+
+    transform:none;
+
+    cursor:not-allowed;
+}
+
+/* MENSAJE */
+
+.mensaje{
+
+    margin-top:30px;
+
+    min-height: 2.4rem;
+
+    font-size:1.6rem;
+
+    color:#88C3E7;
+
+    letter-spacing: 1px;
+}
+
+.mensaje.ganaste{
+
+    color: #6ee7a8;
+}
+
+.mensaje.perdiste{
+
+    color: #f28b8b;
+}
+
+/* BOTON REINICIAR */
+
+.reiniciar{
+
+    margin-top:30px;
+
+    padding:14px 32px;
+
+    border: 2px solid #2073A9;
+
+    border-radius:5px;
+
+    background:#2073A9;
+
+    color:#F2F8FD;
+
+    font-size:1.2rem;
+
+    letter-spacing: 1px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:
+        0 5px 0 #124A6C;
+
+    transition:0.15s;
+}
+
+.reiniciar:hover{
+
+    background:#55AADB;
+
+    border-color: #55AADB;
+}
+
+.reiniciar:active{
+
+    transform:translateY(3px);
+
+    box-shadow:
+        0 2px 0 #124A6C;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    .bomba{
+        width:230px;
+        height:230px;
+    }
+
+    .letra{
+        width:40px;
+        height:50px;
+        font-size:1.5rem;
+    }
+
+    .teclado button{
+        width:42px;
+        height:42px;
+    }
+}
